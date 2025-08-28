@@ -1,0 +1,35 @@
+# ----- Java / Maven (backend) -----
+/target/
+*.log
+*.iml
+/.idea/
+.project
+.classpath
+.settings/
+
+# Keep Maven Wrapper committed (mvnw, .mvn/**) so builds work on CI/Render
+# (Do NOT ignore .mvn or mvnw files)
+
+# ----- Node / Vite (frontend subfolder) -----
+/ganpati-frontend/node_modules/
+/ganpati-frontend/dist/
+/ganpati-frontend/.vite/
+/ganpati-frontend/npm-debug.log*
+
+# Lockfiles are recommended to commit (repeatable installs):
+#   keep package-lock.json / yarn.lock tracked
+# (So we do NOT ignore them)
+
+# ----- Environment / secrets -----
+/.env
+/.env.*
+!/ .env.example
+
+/ganpati-frontend/.env
+/ganpati-frontend/.env.*
+!/ganpati-frontend/.env.example
+
+# ----- OS/editor cruft -----
+.DS_Store
+Thumbs.db
+.vscode/
